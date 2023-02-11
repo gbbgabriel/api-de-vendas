@@ -1,0 +1,13 @@
+export default {
+  type: 'postgres',
+  host: 'localhost',
+  port: 5432,
+  username: 'postgres',
+  password: '1234',
+  database: 'apivendas',
+  entities: ['./dist/modules/**/typeorm/entities/*.js'],
+  migrations: ['./dist/shared/typeorm/migrations/*.js'],
+  cli: {
+    migrationsDir: './dist/shared/typeorm/migrations',
+  },
+}
